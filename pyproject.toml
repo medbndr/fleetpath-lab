@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fleetpath-lab"
+version = "1.0.0"
+description = "Plan collision-free robot routes on a grid with space-time reservations."
+requires-python = ">=3.11"
+dependencies = []
+
+[project.scripts]
+fleetpath-lab = "fleetpath.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["fleetpath*"]
